@@ -231,25 +231,3 @@ class Frog:
 
     def __str__(self):
         return f'{self.name} is a {self.species}.'
-
-malcom = Frog('Malcom', 'Tree', 'crickets')
-miles = Toad('Miles', 'Sonoran Desert', 'worms')
-zane = Spider('Zane', 'Black Widow', 'morning', 'humans')
-adrian = Lizard('Adrian', 'Chameleon', 'midday', 'maggots')
-tom = Snake('Tom', 'Copperhead', 'mice')
-leigha = Goldfish('Leigha', 'Gold Goldfish', 'fish food')
-bryan = Loon('Bryan', 'Northern', 'cherrios')
-joe = Goose('Joe', 'Canadian', 'minos')
-sarah = Flamingo('Sarah', 'Purple', 'mosquitos')
-luke = Duck('Luke', 'Mallard', 'bread')
-eli = Groundhog('Eli', 'Nusance', 'afternoon', 'trash')
-kaleb = Squirrel('Kaleb', 'Grey', 'morning', 'nuts')
-michelle = Cat('Michelle', 'Mountain Lion', 'afternoon', 'sardines')
-brian = Dog('Brian', 'Corgi', 'midday', 'wal-mart meat truck leftovers')
-kirk = Horse('Kirk', 'Thoroughbred', 'morning', 'grains')
-
-print(f'{kirk.name} the {kirk.species} is available to pet during the {kirk.shift} shift.')
-print(kirk.feed())
-print(kirk)
-print(brian.feed())
-
