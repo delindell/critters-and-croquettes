@@ -248,8 +248,59 @@ michelle = Cat('Michelle', 'Mountain Lion', 'afternoon', 'sardines')
 brian = Dog('Brian', 'Corgi', 'midday', 'wal-mart meat truck leftovers')
 kirk = Horse('Kirk', 'Thoroughbred', 'morning', 'grains')
 
-print(f'{kirk.name} the {kirk.species} is available to pet during the {kirk.shift} shift.')
-print(kirk.feed())
-print(kirk)
-print(brian.feed())
+# print(f'{kirk.name} the {kirk.species} is available to pet during the {kirk.shift} shift.')
+# print(kirk.feed())
+# print(kirk)
+# print(brian.feed())
 
+class PettingZoo:
+
+    def __init__(self, name):
+        self.attraction_name = name
+        self.description = 'place where cuddly creatures congrigate like'
+        self.animals = []
+
+    def __str__(self):
+        return f'{self.attraction_name} is a {self.description}'
+
+varmint_village = PettingZoo('Varmint Village')
+varmint_village.animals.extend([kirk, brian, michelle, kaleb, eli])
+
+print(varmint_village)
+
+for animal in varmint_village.animals:
+    print(f'{animal.name} the {animal.species}')
+
+class SnakePit:
+
+    def __init__(self, name):
+        self.attraction_name = name
+        self.description = 'place where dangerous creatures congrigate like'
+        self.animals = []
+
+    def __str__(self):
+        return f'{self.attraction_name} is a {self.description}'
+
+slithering_sliders = SnakePit('Slithering Sliders')
+slithering_sliders.animals.extend([malcom, miles, zane, adrian, tom])
+print(slithering_sliders)
+
+for animal in slithering_sliders.animals:
+    print(f'{animal.name} the {animal.species}')
+
+class WetLands:
+    
+    def __init__(self, name):
+        self.attraction_name = name
+        self.description = 'place where creatures that enjoy water in some capacity live like'
+        self.animals = []
+
+    def __str__(self):
+        return f'{self.attraction_name} is a {self.description}'
+
+dirty_pond = WetLands('Dirty Pond')
+dirty_pond.animals.extend([luke, sarah, joe, bryan, leigha])
+print(dirty_pond)
+
+for animal in dirty_pond.animals:
+    print(f'{animal.name} the {animal.species}')
