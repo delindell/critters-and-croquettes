@@ -1,22 +1,6 @@
-from attractions import PettingZoo
-from attractions import SnakePit
-from attractions import WetLands
+from attractions import *
 
-from animals import Horse
-from animals import Toad
-from animals import Dog
-from animals import Cat
-from animals import Groundhog
-from animals import Snake
-from animals import Spider
-from animals import Squirrel
-from animals import Frog
-from animals import Lizard
-from animals import Goldfish
-from animals import Loon
-from animals import Goose
-from animals import Flamingo
-from animals import Duck
+from animals import *
 
 malcom = Frog('Malcom', 'Tree', 'crickets')
 miles = Toad('Miles', 'Sonoran Desert', 'worms')
