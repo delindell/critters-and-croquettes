@@ -23,7 +23,8 @@ print(kirk.chip_number)
 kirk.chip_number = 57889
 
 print(kirk.chip_number)
-
+print(kirk.feed())
+print(brian.feed())
 
 varmint_village = PettingZoo('Varmint Village')
 varmint_village.animals.extend([kirk, brian, michelle, kaleb, eli])
