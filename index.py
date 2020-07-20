@@ -1,5 +1,4 @@
 from attractions import *
-
 from animals import *
 
 malcom = Frog('Malcom', 'Tree', 'crickets')
